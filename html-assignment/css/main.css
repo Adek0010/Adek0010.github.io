@@ -1,6 +1,4 @@
-/* this is a css document */
-
-body{ /*0001*/
+body{ 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
 
@@ -15,6 +13,12 @@ body{ /*0001*/
     }
     main ul { /*0001*/
         list-style-type: square;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    a:link {
+        text-decoration: none;
     }
 
 }
