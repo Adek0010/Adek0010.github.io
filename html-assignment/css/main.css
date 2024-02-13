@@ -19,9 +19,10 @@ body{
     }
     a:link {
         text-decoration: none;
-    }
-    a:link {
         background: chartreuse;
+    }
+    a:hover {
+        background: dodgerblue;
     }
 
 }
