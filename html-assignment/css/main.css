@@ -1,13 +1,16 @@
 /* this is a css document */
 
-body{
+body{ /*0001*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
 
-    header,footer{
+    header,footer{ /*0001*/
         background-color: crimson;
     }
-    .h1{
+    .site-title{ /*0010*/
         color: cyan;
+    }
+    #my-image{ /*0100*/
+       box-shadow: 0px 0px 2px 1px black;
     }
 }
