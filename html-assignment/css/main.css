@@ -17,6 +17,9 @@ body{
     nav ul {
         list-style-type: none;
     }
+    main ul :nth-child(odd) {
+        background-color: aqua;
+    }
     a:link {
         text-decoration: none;
         background: chartreuse;
