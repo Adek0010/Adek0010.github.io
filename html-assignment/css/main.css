@@ -7,4 +7,7 @@ body{
     header,footer{
         background-color: crimson;
     }
+    .h1{
+        color: cyan;
+    }
 }
