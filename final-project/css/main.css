@@ -1,3 +1,316 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem 0.75rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin: 1rem 0.75rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0.75rem;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 1rem 0.75rem;
+}
+
+body {
+    line-height: 1;
+    word-spacing: normal;
+}
+
+button {
+    line-height: normal;
+    margin-top: 2rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 .container {
+    margin: auto;
+    padding: 10px;
     max-width: 1200px;
+}
+
+img {
+    max-width: 1200px;
+    height: auto;
+}
+
+header {
+    background-color: #222;
+}
+
+header div img {
+    padding-right: 79%;
+    background-color: #c78c06;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
+    text-decoration: #222;
+    text-align: center;
+    padding: 1.5rem;
+    justify-content: center;
+    color: #c78c06;
+}
+
+nav li :hover {
+    background-color:  #c78c06;
+    
+}
+
+nav li input{
+    width: 95%;    
+}
+
+nav li img{
+    border: solid #c78c06;
+    color: #c78c06;
+}
+
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    padding: 2rem;
+}
+
+.banner div {
+    width: 100%;
+    background-color: #222222a2;
+}
+
+button {
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    margin: 1rem;
+}
+
+.banner button {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.banner button img {
+    background-color: #c78c06;
+}
+
+.about-us{
+    width: 100%;
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about-us img {
+    width: 100%;
+}
+
+.digital-transformation {
+    background-color: #ffe6ac;
+    margin: 1rem 1rem;
+}
+
+.digital-transformation div img {
+    width: 100%;
+    padding-right: 0;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    margin: 1rem 1rem;
+}
+
+.marketing div img {
+    width: 100%;
+}
+
+.video-production {
+    background-color: #ffe6ac;
+    margin: 1rem 1rem;
+}
+
+.video-production div img {
+    width: 100%;
+}
+
+.web-development {
+    background-color: #ffe6ac;
+    margin: 1rem 1rem;
+}
+
+.web-development div img {
+    width: 100%;
+}
+
+.print {
+    background-color: #ffe6ac;
+    margin: 1rem 1rem;
+}
+
+.print div img {
+    width: 100%;
+}
+
+.digital-transformation img,.marketing img,.video-production img,.web-development img,.print img {
+    background-color: #ffe6ac;
+    width: calc(100% - 10px);
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.our-services button img{
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: white;
+    padding: 2rem;
+}
+
+.john {
+    background-color: #ffe6ac;
+}
+
+.john div {
+    padding: 10px;
+}
+
+.john img {
+    width: 100%;
+}
+
+.bob {
+    background-color: #ffe6ac;
+}
+
+.bob div {
+    padding: 10px;
+}
+
+.bob img {
+    width: 100%;
+}
+
+.contact {
+    text-align: left;
+}
+
+form input {
+    width: 95%;
+}
+
+table {
+    width: 100%;
+}
+
+caption{
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+td,th {
+    text-align: left;
+    border: solid black 1px;
+    padding: 10px;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+iframe {
+    width: 100%;
 }
