@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,7 +48,11 @@ table {
 	border-spacing: 0;
 }
 
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 16px;
@@ -80,7 +80,7 @@ h3 {
 h4 {
     font-weight: bold;
     font-size: 1.25rem;
-    margin: 1rem 0.75rem;
+    margin: 0rem 0.75rem;
 }
 
 body {
@@ -160,7 +160,7 @@ nav li img{
 
 .banner div {
     width: 100%;
-    background-color: #222222a2;
+    background-color: #22222294;
 }
 
 button {
@@ -237,7 +237,7 @@ button {
 
 .digital-transformation img,.marketing img,.video-production img,.web-development img,.print img {
     background-color: #ffe6ac;
-    width: calc(100% - 10px);
+    width: 100%;
     margin: auto;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -283,6 +283,12 @@ button {
     width: 100%;
 }
 
+hr {
+    background-color: #c78c06;
+    padding: 1px 1px;
+    width: 95%;
+}
+
 .contact {
     text-align: left;
 }
@@ -313,4 +319,80 @@ th {
 
 iframe {
     width: 100%;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 20px;
+}
+
+@media screen and (min-width: 760px){
+    .container {
+        min-width: 760px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 760px;
+    }
+
+    header div img {
+        padding: 0;
+    }
+
+    nav {
+         display: flex;
+         
+    }
+
+    nav ul li {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .about-us{ 
+    }
+
+
+    .our-services {
+        display: grid;
+        grid-template-areas: 
+        "s1 s1 s1 s1 s1 s1"
+        "s2 s2 s2 s3 s3 s3"
+        "s2 s2 s2 s3 s3 s3"
+        "s2 s2 s2 s3 s3 s3"
+        "s4 s4 s5 s5 s6 s6"
+        "s4 s4 s5 s5 s6 s6"
+        "s4 s4 s5 s5 s6 s6";
+    }
+
+.our-services > div:nth-child(1) {
+    grid-area: s1;
+}
+
+.our-services > div:nth-child(2) {
+    grid-area: s2;
+}
+
+.our-services > div:nth-child(3) {
+    grid-area: s3;
+}
+
+.our-services > div:nth-child(4) {
+    grid-area: s4;
+}
+
+.our-services > div:nth-child(5) {
+    grid-area: s5;
+}
+
+.our-services > div:nth-child(6) {
+    grid-area: s6;
+}
+
+
+    
 }
