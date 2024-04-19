@@ -364,6 +364,10 @@ footer {
         width: 400px;
     }
 
+    .our-services button {
+        width: calc(100% - 30px);
+    }
+
     .our-services {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
