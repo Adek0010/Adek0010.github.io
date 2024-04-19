@@ -140,7 +140,7 @@ nav a{
 nav li :hover {
     background-color: #c78c06;
     color:#222;
-    padding: 0 3rem;
+    
 }
 
 nav li input{
@@ -154,10 +154,8 @@ nav li img{
 
 .banner {
     background-image: url(../images/main-banner.jpg);
-    background-size: contain;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
     width: 100%;
     color: white;
     padding: 2rem;
@@ -171,7 +169,7 @@ nav li img{
 button {
     padding: 10px;
     background-color: #222;
-    color: white;
+    color: #c78c06;
     margin: 1rem;
 }
 
@@ -258,10 +256,8 @@ button {
     background-image: url(../images/vision.jpg);
     background-size: contain;
     background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     color: white;
-    padding: 2rem;
 }
 
 .john {
@@ -289,9 +285,10 @@ button {
 }
 
 hr {
-    background-color: #c78c06;
-    padding: 1px 1px;
-    width: 95%;
+    border: 1px solid;
+    color: #c78c06;
+    width: 100%;
+
 }
 
 .contact {
@@ -302,8 +299,13 @@ form input {
     width: 95%;
 }
 
+#message {
+    height: 150px;
+}
+
 table {
     width: 100%;
+    padding: 20px;
 }
 
 caption{
@@ -324,7 +326,6 @@ th {
 
 iframe {
     width: 100%;
-    padding-bottom: 10px;
 }
 
 footer {
@@ -333,36 +334,42 @@ footer {
     padding: 20px;
 }
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 760px) {
     .container {
-        min-width: 1200px;
-        margin: 0 auto;
-        padding: 10px;
+       display: flex;
+       flex-direction: column;
+       padding: 20px 0;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
     }
 
-    img {
-        max-width: 1200px;
+    nav ul {
+        display: flex;
+        flex-direction: row;
     }
 
-    header div img {
-        padding: 0;
+    .about-us {
+        display: grid;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
-    nav {
-         display: inline-block;
-         
+    .about-us img {
+        width: 400px;
     }
 
+    .about-us div {
+        width: 400px;
+    }
 
     .our-services {
         display: grid;
+        grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
         "s1 s1 s1 s1 s1 s1"
         "s2 s2 s2 s3 s3 s3"
-        "s2 s2 s2 s3 s3 s3"
-        "s2 s2 s2 s3 s3 s3"
-        "s4 s4 s5 s5 s6 s6"
-        "s4 s4 s5 s5 s6 s6"
         "s4 s4 s5 s5 s6 s6";
     }
 
@@ -390,6 +397,61 @@ footer {
     grid-area: s6;
 }
 
+.team {
+    display: flex;
+    flex-direction: column;
+}
 
+.john {
+    display: flex;
+    margin: 0 0 0 0;
+}
+
+.john img {
+    width: 50%
+}
+
+.bob {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bob img {
+    width: 50%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "c1 c1 c1 c1"
+    "c2 c2 c3 c3"
+    ". . c3 c3"
+    "c4 c4 c4 c4";
+}
+
+.contact > div:nth-child(1) {
+    grid-area: c1;
+}
+
+.contact > div:nth-child(2) {
+    grid-area: c2;
+}
+.contact > div:nth-child(4) {
+    grid-area: c3;
+}
+
+.contact > div:nth-child(3) {
+    grid-area: c4;
+}
+
+table caption {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    margin: 10px;
+}
     
 }
